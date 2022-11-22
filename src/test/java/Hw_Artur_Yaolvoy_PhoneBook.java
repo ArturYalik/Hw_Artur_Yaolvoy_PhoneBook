@@ -19,16 +19,21 @@ public class Hw_Artur_Yaolvoy_PhoneBook {
     @Test
     public void testLogin(){
         System.out.println("Test Started");
-        WebElement home = wd.findElement(By.linkText("HOME"));
-        WebElement about = wd.findElement(By.linkText("ABOUT"));
-        WebElement login = wd.findElement(By.linkText("LOGIN"));
+//        WebElement home = wd.findElement(By.linkText("HOME"));
+//        WebElement about = wd.findElement(By.linkText("ABOUT"));
+//        WebElement login = wd.findElement(By.linkText("LOGIN"));
         List<WebElement> elements = wd.findElements(By.tagName("div"));
         List<WebElement> a = wd.findElements(By.tagName("a"));
         List<WebElement> br = wd.findElements(By.tagName("br"));
         List<WebElement> h1 = wd.findElements(By.tagName("h1"));
-        System.out.println(home);
-        System.out.println(about);
-        System.out.println(login);
+//        wd.findElements(By.cssSelector());
+        wd.findElements(By.cssSelector("[href='/login']"));
+        wd.findElements(By.cssSelector("[href^='/lo']"));
+        wd.findElements(By.cssSelector("[href*='og']"));
+        wd.findElements(By.cssSelector("[href$='in']"));
+        List<WebElement> butons = wd.findElements(By.tagName("button"));
+
+
         System.out.println(elements.size());
         System.out.println(a.size());
         System.out.println(br.size());
