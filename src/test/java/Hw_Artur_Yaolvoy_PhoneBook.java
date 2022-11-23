@@ -19,25 +19,22 @@ public class Hw_Artur_Yaolvoy_PhoneBook {
     @Test
     public void testLogin(){
         System.out.println("Test Started");
-//        WebElement home = wd.findElement(By.linkText("HOME"));
-//        WebElement about = wd.findElement(By.linkText("ABOUT"));
-//        WebElement login = wd.findElement(By.linkText("LOGIN"));
-        List<WebElement> elements = wd.findElements(By.tagName("div"));
-        List<WebElement> a = wd.findElements(By.tagName("a"));
-        List<WebElement> br = wd.findElements(By.tagName("br"));
-        List<WebElement> h1 = wd.findElements(By.tagName("h1"));
-//        wd.findElements(By.cssSelector());
+        wd.findElement(By.linkText("HOME"));
+        wd.findElement(By.linkText("ABOUT"));
+        wd.findElement(By.linkText("LOGIN"));
+        wd.findElements(By.tagName("div"));
+        wd.findElements(By.tagName("a"));
+        wd.findElements(By.tagName("br"));
+        wd.findElements(By.tagName("h1"));
+        wd.findElements(By.tagName("button"));
         wd.findElements(By.cssSelector("[href='/login']"));
-        wd.findElements(By.cssSelector("[href^='/lo']"));
-        wd.findElements(By.cssSelector("[href*='og']"));
-        wd.findElements(By.cssSelector("[href$='in']"));
-        List<WebElement> butons = wd.findElements(By.tagName("button"));
-
-
-        System.out.println(elements.size());
-        System.out.println(a.size());
-        System.out.println(br.size());
-        System.out.println(h1.size());
+        wd.findElement(By.cssSelector("[href*='h']"));
+        wd.findElement(By.cssSelector("[href$='ut']"));
+        wd.findElements(By.cssSelector("div"));
+        wd.findElements(By.cssSelector("a"));
+        wd.findElements(By.cssSelector("br"));
+        wd.findElements(By.cssSelector("h1"));
+        wd.findElements(By.cssSelector("button"));
 
     }
 
